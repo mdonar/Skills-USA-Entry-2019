@@ -1,0 +1,320 @@
+/* 
+
+Green - #96cd7d
+Blue - #437fc1
+Purple - #223f8b
+
+font- Myriad Pro
+
+font- Arial (Bold)
+
+*/ 
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial;
+    overflow-x: hidden;
+}
+
+.logo {
+    width: 5%;
+    position: absolute;
+    padding: 1%;
+}
+
+nav {
+    width: 100%;
+    background: #437fc1;
+    text-align: center;
+    padding: 3.5%;
+}
+
+nav a {
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin: 2%;
+    font-family: Arial;
+}
+
+nav a:hover {
+    color: #96cd7d;
+}
+
+.clear {
+    clear: both;
+}
+
+.heading {
+    text-transform: uppercase;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+}
+
+.welcome {
+    width: 100%;
+    height: 90vh;
+    background-image: url(../img/alex-color.png);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.welcome h1 {
+    color: #FFF;
+    font-size: 3rem;
+    padding-top: 5%;
+}
+
+.welcome p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.welcome .content {
+    border: 5px solid #223f8b;
+    padding: 2%;
+    width: 50%;
+    display: block;
+    margin: auto;
+    background: #96cd7d;
+    opacity: 0.8;
+    margin-top: 2%;
+}
+
+.about {
+    height: 50vh;
+    padding-bottom: 1%;
+    clear: both;
+}
+
+.about h1 {
+    text-align: center;
+    padding-top: 1%;
+    color: #437fc1;
+}
+
+.about p {
+    font-size: 1.1rem;
+    padding: 1% 2%;
+    text-align: center;
+}
+.about .ps4 {
+    width: 25%;
+    border-radius: 15px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.careers {
+    margin-top: 15%;
+}
+
+/* Form */
+
+form {
+    background-color: blue;
+    background-image: linear-gradient(to top left, #223f8b, #437fc1);
+    height: vh;
+    border-radius: 25px;
+    width: 60vh;
+    margin: 0 auto;
+    color: white;
+    clear: both;
+    padding: 1%;
+    margin-top: 10%;
+}
+
+
+.billing {
+    padding-top: 10%;
+}
+
+
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=date],
+input[type=month],
+select {
+
+    padding: 5px 12px;
+    margin: 8px 0;
+    border: 1px solid black;
+    border-radius: 25px;
+
+}
+
+
+textarea {
+    border-radius: 20px;
+}
+
+
+input[type=button] {
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: white;
+    width: 40%;
+
+}
+
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
+
+input[type=email]:focus {
+    background-color: lightblue;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome */
+    color: darkgrey;
+    font-size: 15px;
+}
+
+
+/* Text */
+
+label {
+    text-align: center;
+    font-size: 30px;
+}
+
+.left {
+    text-align: left;
+    float: left;
+    padding-left: 15px;
+    padding-top: 2%;
+}
+
+.right {
+    padding-right: 10px;
+    float: right;
+    padding-top: 2%;
+
+}
+
+.clear {
+    clear: both;
+}
+
+
+.extra_info {
+    font-size: 10px;
+    font-weight: bold;
+    color: gray;
+}
+
+
+.center_head {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/* footer*/
+
+.footerCon {
+    /* Get rid of frsit two line */
+    height: 30vh;
+    margin-top: 10vh;
+    background-color: #437fc1;
+    font-style: Myriad Pro;
+    color: #fff;
+    padding: 2%;
+}
+
+.footlogo {
+    vertical-align: middle;
+}
+
+.footerimg {
+    position: absolute;
+}
+
+
+.footlogo, .sen {
+    float: left;
+    vertical-align: middle;
+}
+
+.footerHours {
+    text-align: center;
+}
+
+.footerExtra a {
+    color: lightgray;
+}
+
+.footerExtra a:hover {
+    cursor: pointer;
+}
+
+
+.footerExtra {
+    text-align: center;
+    padding-top: 8vh;
+}
+
+.footerSign img {
+    float: right;
+}
+
+.footerSign {
+    margin-bottom: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+    
+    nav {
+        height: 6vh;
+    }
+    
+    .logo {
+        width: 10%;
+    }
+    
+    .welcome .content {
+        width: 90%;
+    }
+    
+    .about {
+        padding: 5%;
+    }
+    
+    .about p {
+        font-size: 1rem;
+    }
+    
+    .about .ps4 {
+        width: 50%;
+        padding: 2%;
+    }
+    
+    .footerCon {
+        height: 40vh;
+        margin-top: 100%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    
+    .about {
+        padding: 5%;
+    }
+    
+    .footerCon {
+        margin-top: 70%;
+    }
+}
